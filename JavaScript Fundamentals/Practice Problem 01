@@ -1,0 +1,25 @@
+//Ptroblem 01
+const student={
+    name:"Shafin",
+    marks:[80,60,39]
+};
+const calculateAverage=(marks)=>{
+    let total=0;
+    for(let mark of marks)
+    {
+     total+=mark;
+    }
+    return total/marks.length; 
+    
+};
+const average=calculateAverage(student.marks);
+console.log("Student's name:",student.name);
+console.log("Average marks:",average);
+if(average>=40)
+{
+    console.log("Passed");
+}
+else
+{
+    console.log("Failed");
+}
